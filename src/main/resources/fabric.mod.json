@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "modid",
 	"version": "${version}",
-	"name": "Example mod",
+	"name": "Mix mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"dungs72"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.mode.MainMode"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.mode.MainModClient"
 		]
 	},
 	"mixins": [

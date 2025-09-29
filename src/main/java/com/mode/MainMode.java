@@ -1,11 +1,13 @@
-package com.example;
+package com.mode;
 
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ExampleMod implements ModInitializer {
+import com.mode.items.ModItems;
+
+public class MainMode implements ModInitializer {
 	public static final String MOD_ID = "modid";
 
 	// This logger is used to write text to the console and the log file.
@@ -15,6 +17,7 @@ public class ExampleMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.initialize();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
